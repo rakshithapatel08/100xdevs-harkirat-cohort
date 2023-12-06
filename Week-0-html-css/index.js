@@ -1,5 +1,5 @@
 /*
-  The js file is attacjed to html using script tag.
+  The js file is attached to html using script tag.
   we write defer beacuse the html has to wait until the DOM is created.
 
   Defer: This attribute makes sure that all the scripts are downloaded but
@@ -18,11 +18,11 @@ buttonElement.addEventListener("click",()=>{
    amount = simpleInterest + capitalInput.value;
    console.log(amount)
    buttonElement.style.setProperty("display","none");
-   //created new element
+   //created new h2 element
    const answerElement = document.createElement("h2");
-   // added text to new element
+   // added text to new element instead use .textContent
    const node = document.createTextNode(`Amount received is : ${amount}`);
-   // appended text to new element
+   // appended text to new h2 element
    answerElement.appendChild(node);
    // appended the entire answer element to existing div element
    divElement.appendChild(answerElement);
